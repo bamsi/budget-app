@@ -1,0 +1,5 @@
+<h1>Categories</h1>
+
+<% @categories.each do |item| %>
+  <%= render partial: "shared/category", locals: {item: item} %>
+<% end %>
