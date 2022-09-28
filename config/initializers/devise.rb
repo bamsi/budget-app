@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Assuming you have not yet modified this file, each configuration option below
 # is set to its default value. Note that some are commented out while others
 # are not: uncommented lines are intended to protect your configuration from
@@ -14,7 +12,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '0f02035b8902f6083bb2da036387f087da33352265c613abecea9b99f4e27e6a43b0e3f767d8f2f161cf30383def1a81e66e50ca29480f913eaca6e07f678f4c'
+  # config.secret_key = '0f02035b8902f6083bb2da036387f087da33352265c613abecea9b99f4e27e6a43b0e3f767d8f2f161cf30383def1a81e66e50ca29480f913eaca6e07f67'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
