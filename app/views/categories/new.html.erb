@@ -1,0 +1,15 @@
+<h1 class="page-title">Add Category</h1>
+<%= form_with model: @category, url: categories_path do |f| %>
+  <div class='form-control'>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class='form-control'>
+    <%= f.label :icon,'Paster icon url' %><br>
+    <%= f.text_field :icon %>
+  </div>
+  <div>
+    <%= f.submit "Add Category", class: 'button' %>
+  </div>
+<% end %>
+

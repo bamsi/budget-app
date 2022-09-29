@@ -3,3 +3,5 @@
 <% @categories.each do |item| %>
   <%= render partial: "shared/category", locals: {item: item} %>
 <% end %>
+
+<%= button_to 'Add Category', new_category_path %>
