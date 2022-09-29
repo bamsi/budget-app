@@ -9,7 +9,8 @@
     <%= f.number_field :amount %>
   </div>
   <div>
-    <%= f.submit "Add Category", class: 'button' %>
+    <%= f.submit "Add Transaction", class: 'button' %>
   </div>
 <% end %>
 
+<%= button_to 'Back', category_expenditures_path(category_id: @category_id), method: 'get' %>
