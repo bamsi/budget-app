@@ -1,1 +1,34 @@
-<%= link_to "LOG OUT", destroy_user_session_path, data: { turbo_method: :delete } %>
+
+<nav class="navbar navbar-dark bg-primary fixed-top">
+  <div class="container">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="col-8">
+          <%= link_to 'Bajeti Yangu', home_index_path, class: 'navbar-brand', method: 'get' %>
+        </div>
+      </div>
+    </div>
+  
+    <div class="offcanvas offcanvas-start bg-primary text-light" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Bajeti Yangu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <%= link_to 'Home', categories_path, class: 'nav-link text-light', method: 'get' %>
+          </li>
+          <li class="nav-item">
+            <%= button_to 'Log Out', destroy_user_session_path, class: 'btn btn-light', method: 'delete' %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

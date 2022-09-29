@@ -1,16 +1,20 @@
-<h1 class="page-title">Add Transaction</h1>
+<p class="h3 text-secondary">Add Transaction</p>
 <%= form_with model: @expenditure, url: category_expenditures_path(category_id: @category_id) do |f| %>
-  <div class='form-control'>
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+  <div class='row mb-3'>
+    <%= f.label :name, class: 'col-md-2 col-form-label col-form-label-lg' %>
+    <div class="col-md-10">
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
   </div>
-  <div class='form-control'>
-    <%= f.label :amount,'Amount' %><br>
-    <%= f.number_field :amount %>
+  <div class='row mb-3'>
+    <%= f.label :amount,'Amount', class: 'col-md-2 col-form-label col-form-label-lg' %>
+    <div class="col-md-10">
+      <%= f.number_field :amount, class: 'form-control' %>
+    </div>
   </div>
-  <div>
-    <%= f.submit "Add Transaction", class: 'button' %>
+  <div class="d-flex justify-content-between">
+    <%= link_to 'Back', category_expenditures_path(@category_id), method: 'get', class: 'btn btn-primary' %>
+    <%= f.submit "Add Transaction", class: 'btn btn-primary' %>
   </div>
 <% end %>
 
-<%= button_to 'Back', category_expenditures_path(category_id: @category_id), method: 'get' %>
