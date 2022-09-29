@@ -1,0 +1,13 @@
+<div>
+  <%= image_tag @category.icon, alt: @category.name, class: 'img-fluid avator' %>
+  <h1><%= @category.name %></h1>
+  <%= @category.expenditures.sum(:amount) %>
+  <% @category.expenditures.order(created_at: :desc).each do |expenditure|%>
+    <%= render partial: "shared/expenditure", locals: {expenditure: expenditure} %>
+  <% end %>
+  <div>Total: <%= @category.expenditures.sum(:amount) %></div>
+</div>
+
+<%= button_to 'Add Transaction', new_category_expenditure_path(category_id: @category.id), method: 'get' %>
+
+<%= button_to 'Back', categories_path, method: 'get' %>
