@@ -3,7 +3,7 @@ class CategoriesController < ApplicationController
     @categories = Category.includes(:expenditures).where(user_id: current_user.id)
   end
 
-  def new 
+  def new
     @category = Category.new
   end
 
