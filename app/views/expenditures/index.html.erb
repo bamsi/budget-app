@@ -8,3 +8,6 @@
   <div>Total: <%= @category.expenditures.sum(:amount) %></div>
 </div>
 
+<%= button_to 'Add Transaction', new_category_expenditure_path(category_id: @category.id), method: 'get' %>
+
+<%= button_to 'Back', categories_path, method: 'get' %>

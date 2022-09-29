@@ -1,0 +1,15 @@
+<h1 class="page-title">Add Transaction</h1>
+<%= form_with model: @expenditure, url: category_expenditures_path(category_id: @category_id) do |f| %>
+  <div class='form-control'>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class='form-control'>
+    <%= f.label :amount,'Amount' %><br>
+    <%= f.number_field :amount %>
+  </div>
+  <div>
+    <%= f.submit "Add Category", class: 'button' %>
+  </div>
+<% end %>
+
