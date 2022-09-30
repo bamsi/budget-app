@@ -11,7 +11,9 @@ The application allow users to:
 
 <img alt="img" src="app/assets/images/home.png" width="60%" height="auto" />
 
-[livelink](unavailable)
+[Live Link](unavailable)
+
+[Video Link](https://www.loom.com/share/cd7aeea0db60429283e5feecfb4e1069)
 
 This README documents steps necessary to get the application up and running.
 
