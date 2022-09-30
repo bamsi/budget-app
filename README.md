@@ -9,6 +9,8 @@ The application allow users to:
 - introduce new transactions associated with a category.
 - see the money spent on each category.
 
+<img alt="img" src="app/assets/images/home.png" width="60%" height="auto" />
+
 [livelink](unavailable)
 
 This README documents steps necessary to get the application up and running.
