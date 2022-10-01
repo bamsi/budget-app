@@ -1,0 +1,13 @@
+<div class="card mb-3">
+  <div class="row p-1 g-5">
+    <div class="col-3 d-flex justify-content-start align-items-center">
+      <%= image_tag item.icon, alt: item.name, class: 'avator' %>
+    </div>
+    <div class="col-9 align-self-center">
+      <div class="d-flex justify-content-between">
+        <p class="h2"><%= link_to item.name, category_expenditures_path(item.id), class: 'text-black-50 text-capitalize text-decoration-none' %></p>
+        <p class="h3">$<%= item.expenditures.sum(:amount)%></p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<% @categories.each do |item| %>
+  <%= render partial: "shared/category", locals: {item: item} %>
+<% end %>
+
+<div class="d-flex justify-content-end">
+  <%= button_to 'Add Category', new_category_path, method: 'get', class: 'btn btn-primary btn-block' %>
+</div>
